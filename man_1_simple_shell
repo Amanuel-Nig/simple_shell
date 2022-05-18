@@ -1,10 +1,10 @@
-B.\"Manpage for simple shell 
+B.\"Manpage for simple shell
 .\"Created by Amanuel Nigussie Demeke
 
 .TH SODASH 1 "May 2022" "SODA SHELL - Simple Shell man page"
 
 .SH NAME
-sodash\fR \- simple UNIX command interpreter
+soda\fR \- simple UNIX command interpreter
 
 .SH SYNOPSIS
 soda\fR [\fIfilename\fR]
@@ -13,7 +13,7 @@ soda\fR [\fIfilename\fR]
 soda is Copyright (C) 2022 by Amanuel Nigussie Demeke
 
 .SH DESCRIPTION
-Soda\fR is a sh-compatible command language interpreter that executes commands read from the standard input or from a file.
+soda\fR is a sh-compatible command language interpreter that executes commands read from the standard input or from a file.
 
 .SH ARGUMENTS
 If arguments remain after option processing, the first argument is assumed to be the name of a file containing shell commands. Sodash reads and executes commands from this file, then exits. Sodash exit status is the exit status of the last command executed in the script. If no commands are executed, the exit status is 0. An attempt is first made to open the file in the current directory, and, if no file is found, then the shell searches the directories in PATH for the script.
